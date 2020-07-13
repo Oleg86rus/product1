@@ -257,7 +257,6 @@ body {
 .product {
     height: 767px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: 13px;
@@ -274,6 +273,58 @@ body {
     width: 263px;
     height: 364px;
     line-height: 37px;
+    position: relative;
+}
+
+.product1-hover, .product2-hover, .product3-hover, .product4-hover, .product5-hover, .product6-hover, .product7-hover, .product8-hover{
+    display: none;
+}
+.product1:hover .product1-hover, .product2:hover .product2-hover, .product3:hover .product3-hover, .product4:hover .product4-hover,.product5:hover .product5-hover, .product6:hover .product6-hover,.product7:hover .product7-hover, .product8:hover .product8-hover{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 261px;
+    height: 278px;
+    border: 1px solid #9c9c9c;
+    background-color: #3a3838;
+    opacity: 0.9;
+}
+.product11, .product21, .product31, .product41, .product51, .product61, .product71, .product81{
+    width: 263px;
+    height: 280px;
+
+}
+.product111{
+    width: 263px;
+    height: 83px;
+    margin-left: 15px;
+}
+.product12, .product22, .product32, .product42, .product52, .product62, .product72, .product82{
+    margin-top: -88px;
+    padding-left: 13px;
+    width: 248px;
+    height: 83px;
+    background-color: #ffffff;
+}
+.product1-hover .product12, .product2-hover .product22,.product3-hover .product32, .product4-hover .product42, .product5-hover .product52, .product6-hover .product62, .product7-hover .product72, .product8-hover .product82{
+    opacity: 1;
+    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+.productButton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    text-align: right;
+    outline: none;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    margin-top: 98px;
+    margin-left: 70px;
+    width: 123px;
+    height: 39px;
+    background-color: transparent;
 }
 .browseAll {
     border: none;
