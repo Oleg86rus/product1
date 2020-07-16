@@ -107,12 +107,15 @@ body {
 }
 
 .topNav a {
+    outline: none;
     text-transform: uppercase;
     text-decoration: none;
     color: #222222;
 }
 
 .topNav a:hover {
+    padding-bottom: 18px;
+    margin-bottom: -17px;
     border-bottom: 1px solid #050608;
 }
 
@@ -171,11 +174,11 @@ body {
     background-image: url("../img/hotDeal1.jpg");
 }
 
-.hotDealMen {
+.hotDealMan {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    letter-spacing: 0.45px;
+    letter-spacing: 0;
     font-size: 18px;
     font-weight: 900;
     width: 156px;
@@ -185,13 +188,19 @@ body {
     background-color: #ffffff;
 }
 
-.hotDealMen span,
+.hotDealMan span,
 .hotDealAccesories span,
 .hotDealWoman span,
 .hotDealKids span {
     font-size: 30px;
-    letter-spacing: 0.75px;
     color: #f16d7f;
+}
+
+.hotDealMan span,
+.hotDealAccesories span,
+.hotDealWoman span,
+.hotDealKids span {
+    letter-spacing: 1px;
 }
 
 .hotDeal:nth-child(2) {
@@ -204,7 +213,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    letter-spacing: 0.45px;
+    letter-spacing: 0;
     font-size: 18px;
     font-weight: 900;
     width: 206px;
@@ -224,7 +233,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    letter-spacing: 0.45px;
     font-size: 18px;
     font-weight: 900;
     width: 143px;
@@ -232,6 +240,13 @@ body {
     padding-left: 19px;
     margin-top: 26px;
     background-color: #ffffff;
+}
+
+.hotDealWoman {
+}
+
+.hotDealWoman {
+    letter-spacing: 0;
 }
 
 .hotDeal:nth-child(4) {
@@ -244,7 +259,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    letter-spacing: 0.45px;
+    letter-spacing: 0;
     font-size: 18px;
     font-weight: 900;
     width: 161px;
@@ -255,20 +270,25 @@ body {
 }
 
 .fItems {
-    margin: 0 auto;
     width: 367px;
     height: 65px;
     font-size: 30px;
     font-weight: 900;
     text-align: center;
-    margin-bottom: 60px;
+}
+
+.fItems {
+    margin: 0 auto 60px;
 }
 
 .fItems span {
     line-height: 3.86;
-    letter-spacing: 0.35px;
     font-size: 12px;
     color: #9f9f9f;
+}
+
+.fItems span {
+    letter-spacing: 0;
 }
 
 .products {
@@ -278,7 +298,6 @@ body {
     justify-content: space-between;
     font-size: 13px;
     text-transform: uppercase;
-    font-weight: 400;
     margin-bottom: 60px;
     align-content: space-between;
 }
@@ -294,7 +313,12 @@ body {
     line-height: 37px;
     position: relative;
 }
-
+.productImg{
+    height: 280px;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
 .product-hover {
     display: none;
 }
@@ -305,8 +329,7 @@ body {
     top: 0;
     left: 0;
     width: 261px;
-    height: 278px;
-    border: 1px solid #9c9c9c;
+    height: 280px;
     background-color: #3a3838;
     opacity: 0.9;
 }
@@ -316,18 +339,20 @@ body {
     height: 280px;
 }
 
-.product111 {
+.productImgText {
     width: 263px;
     height: 83px;
-    margin-left: 15px;
+    margin-left: 13px;
+    font-weight: 700;
 }
 
 .productText {
-    margin-top: 155px;
+    margin-top: 143px;
     padding-left: 13px;
     width: 248px;
     height: 83px;
     background-color: #ffffff;
+    font-weight: 700;
 }
 
 .product:hover .productText {
@@ -382,7 +407,6 @@ body {
 .salesOffer {
     width: 767px;
     height: 529px;
-    font-size: 53.5px;
     font-weight: 400;
     color: #ffffff;
     background-image: url("../img/sales.jpg");
@@ -400,8 +424,11 @@ body {
 }
 
 .salesOffer:first-child span {
-    letter-spacing: 1.34px;
     color: #f16d7f;
+}
+
+.salesOffer:first-child span {
+    letter-spacing: 1px;
 }
 
 .salesText {
@@ -411,15 +438,8 @@ body {
     background-color: #222224;
     width: 342px;
     height: 529px;
-    letter-spacing: 0.5px;
     color: #fbfbfb;
     padding-left: 31px;
-}
-
-.sale {
-    display: flex;
-    width: 330px;
-    height: 100px;
 }
 
 .sale:nth-child(1) {
@@ -537,7 +557,6 @@ body {
     text-align: center;
     width: 570px;
     height: 438px;
-    margin-left: 92px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -548,32 +567,32 @@ body {
     margin-left: 146px;
     font-weight: 700;
     font-size: 24px;
-    letter-spacing: 0.6px;
     text-transform: uppercase;
-    width: 279px;
+    width: 300px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.subscribeButtonText {
+    letter-spacing: 1px;
+}
+
 .subscribeButtonText span {
     font-weight: 400;
-    letter-spacing: 0.35px;
-    line-height: 24px;
     font-size: 14px;
 }
 
 .emails {
+    display: flex;
     border-radius: 50px;
     margin-left: 146px;
-    display: flex;
-    align-items: center;
     overflow: hidden;
     font-size: 14px;
     border: none;
     outline: none;
-    width: 334px;
+    width: 400px;
     height: 46px;
 }
 
@@ -582,14 +601,14 @@ body {
     height: 46px;
     border: none;
     outline: none;
-    padding: 12px;
+    padding-left: 28px;
     background-color: #e1e1e1;
 }
 
 .email:nth-child(2) {
     border: none;
     outline: none;
-    width: 104px;
+    width: 140px;
     height: 46px;
     background-color: #f16d7f;
 }
@@ -597,7 +616,7 @@ body {
 .footer {
     display: flex;
     margin-top: 109px;
-    height: 538px;
+    height: 358px;
 }
 
 .footerText {
@@ -636,11 +655,12 @@ body {
 .companyNav a,
 .informationNav a,
 .shopCategoryNav a {
+    outline: none;
     text-decoration: none;
     color: #898989;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.4px;
+    letter-spacing: 0;
     display: flex;
     flex-direction: column;
 }
@@ -704,4 +724,106 @@ nav a:hover {
 .Icon:nth-child(5) {
     background-color: #ffffff;
     color: #b2b2b2;
+}
+.shoppingCarts .carts{
+    display: flex;
+    flex-direction: column;
+}
+.cart, .cartPrice{
+    display: flex;
+}
+.shoppingCartsHeader{
+    height: 148px;
+    background-color: #f8f3f4;
+}
+.cartHeader a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222222;
+}
+.cart__header{
+    height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartHeader a:last-child{
+    color: #f16d7f;
+}
+.cartLink{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+.cartLink a{
+    font-weight: 400;
+}
+.cartLink a:hover{
+    border-bottom: 1px solid #050608;
+}
+.shoppingCarts{
+    height: 1123px;
+}
+.cart{
+    height: 162px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eaeaea;
+}
+.lastCart{
+    border-bottom: 1px solid #eaeaea;
+}
+.cartPrice{
+    flex: 1.5;
+    justify-content: space-between;
+    align-items: center;
+}
+.cartPrice input{
+    outline: none;
+}
+.cartInfo1{
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cartInfo{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.cartInfo img{
+    margin-right: 21px;
+    width: 100px;
+    height: 115px;
+    object-fit: cover;
+    object-position: center center;
+}
+.cartInfo1 span{
+    margin-left: 5px;
+    color: #575757;
+    font-weight: 300;
+}
+.cartsLinks{
+    display: flex;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.cartsLinks h3{
+    flex: 1;
+}
+
+.cartsLinks_h{
+    flex: 1.6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cartPrice button{
+    background: none;
+    border: none;
+    outline: none;
 }
