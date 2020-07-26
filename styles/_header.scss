@@ -13,6 +13,9 @@
   div{
     display: flex;
   }
+  a{
+    outline: none;
+  }
   .search {
     input {
       height: inherit;
@@ -52,7 +55,7 @@
     height: 100%;
     text-decoration: none;
     padding-left: 72px;
-
+    outline: none;
   }
 }
 .search {
@@ -80,6 +83,7 @@
 .header__cart {
   margin-left: auto;
   margin-right: 26px;
+  outline: none;
 }
 
 .header__account-bar {
