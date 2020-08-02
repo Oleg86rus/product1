@@ -1,8 +1,7 @@
 $hovercolor: #f16d7f;
 .subscribes {
-  background-image: url("../img/subscribe.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vmax;
+  background: url(../img/subscribe.jpg) no-repeat center bottom, #ccc;
+  background-size: cover;
   height: 438px;
   width: 100%;
 
@@ -214,7 +213,7 @@ nav a:hover {
 .socialIcon {
   display: flex;
   justify-content: space-between;
-  width: 176px;
+  width: 190px;
 }
 
 .Icon {
@@ -226,16 +225,18 @@ nav a:hover {
   width: 32px;
   height: 32px;
   background-color: #ffffff;
+  color: #b2b2b2;
 
 }
 
 .Icon:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #f16d7f;
 }
 
 .Icon:nth-child(1) {
   color: #b2b2b2;
-}
+}/*
 
 .Icon:nth-child(2) {
   background-color: #f16d7f;
@@ -251,4 +252,4 @@ nav a:hover {
 .Icon:nth-child(5) {
   background-color: #ffffff;
   color: #b2b2b2;
-}
+}*/
