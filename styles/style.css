@@ -13,6 +13,7 @@
 }
 .header div {
   display: flex;
+  align-items: center;
 }
 .header a {
   outline: none;
@@ -128,9 +129,8 @@
 }
 
 .subscribes {
-  background-image: url("../img/subscribe.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vmax;
+  background: url(../img/subscribe.jpg) no-repeat center bottom, #ccc;
+  background-size: cover;
   height: 438px;
   width: 100%;
 }
@@ -326,7 +326,7 @@ nav a:hover {
 .socialIcon {
   display: flex;
   justify-content: space-between;
-  width: 176px;
+  width: 190px;
 }
 
 .Icon {
@@ -338,15 +338,19 @@ nav a:hover {
   width: 32px;
   height: 32px;
   background-color: #ffffff;
+  color: #b2b2b2;
 }
 
 .Icon:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #f16d7f;
 }
 
 .Icon:nth-child(1) {
   color: #b2b2b2;
 }
+
+/*
 
 .Icon:nth-child(2) {
   background-color: #f16d7f;
@@ -362,16 +366,7 @@ nav a:hover {
 .Icon:nth-child(5) {
   background-color: #ffffff;
   color: #b2b2b2;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  color: #222222;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-}
-
+}*/
 .topBanner {
   height: 613px;
   background-color: #e8e8e8;
@@ -548,29 +543,25 @@ body {
   align-content: space-between;
 }
 
-.product span {
-  font-size: 16px;
-  color: #f16d7f;
-}
-
 .product {
   width: 263px;
   height: 364px;
   line-height: 37px;
   position: relative;
 }
-
-.productImg {
+.product span {
+  font-size: 16px;
+  color: #f16d7f;
+}
+.product .productImg {
   height: 280px;
   display: block;
   object-fit: cover;
   object-position: center center;
 }
-
-.product-hover {
+.product .product-hover {
   display: none;
 }
-
 .product:hover .product-hover {
   display: block;
   position: absolute;
@@ -581,20 +572,17 @@ body {
   background-color: #3a3838;
   opacity: 0.9;
 }
-
-.productButton {
+.product .productButton {
   width: 263px;
   height: 280px;
 }
-
-.productImgText {
+.product .productImgText {
   width: 263px;
   height: 83px;
   margin-left: 13px;
   font-weight: 700;
 }
-
-.productText {
+.product .productText {
   margin-top: 143px;
   padding-left: 13px;
   width: 248px;
@@ -602,13 +590,11 @@ body {
   background-color: #ffffff;
   font-weight: 700;
 }
-
 .product:hover .productText {
   opacity: 1;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
 }
-
-.productButton {
+.product .productButton {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -726,6 +712,151 @@ body {
   font-size: 14px;
 }
 
+.sliderModel {
+  margin-bottom: 73px;
+}
+.sliderModel .sliderGirl {
+  position: relative;
+  background-color: #f7f7f7;
+}
+.sliderModel .sliderGirl .sliderGirl_c {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.sliderModel .sliderGirl div:nth-child(2), .sliderModel .sliderGirl div:nth-child(3) {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: calc(50% - 47px / 2);
+  width: 47px;
+  height: 47px;
+  color: #fff;
+  background: #d8d8d8;
+  cursor: pointer;
+}
+.sliderModel .sliderGirl div:nth-child(2) {
+  left: 0;
+}
+.sliderModel .sliderGirl div:nth-child(3) {
+  right: 0;
+}
+.sliderModel div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sliderModel .products_sp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 13px;
+  text-transform: uppercase;
+  align-content: space-between;
+}
+.sliderModel .products_sp .product_sp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 263px;
+  height: 364px;
+  line-height: 37px;
+  position: relative;
+}
+.sliderModel .products_sp .product_sp span {
+  font-size: 16px;
+  color: #f16d7f;
+}
+.sliderModel .products_sp .product_sp .productImg {
+  height: 280px;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+.sliderModel .products_sp .product_sp .product-hover {
+  display: none;
+}
+.sliderModel .products_sp .product_sp:hover .product-hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 261px;
+  height: 280px;
+  background-color: #3a3838;
+  opacity: 0.9;
+}
+.sliderModel .products_sp .product_sp .productButton {
+  width: 263px;
+  height: 280px;
+}
+.sliderModel .products_sp .product_sp .productImgText {
+  width: 263px;
+  height: 83px;
+  margin-left: 13px;
+  font-weight: 700;
+}
+.sliderModel .products_sp .product_sp .productText {
+  margin-top: 143px;
+  padding-left: 13px;
+  width: 248px;
+  height: 83px;
+  background-color: #ffffff;
+  font-weight: 700;
+}
+.sliderModel .products_sp .product_sp:hover .productText {
+  opacity: 1;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+.sliderModel .products_sp .product_sp .productButton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  text-align: right;
+  outline: none;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  margin-top: 98px;
+  margin-left: 70px;
+  width: 123px;
+  height: 39px;
+  background-color: transparent;
+}
+
+.modelInfoWrap {
+  width: 1141px;
+  height: 730px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modelInfo {
+  width: 620px;
+}
+.modelInfo form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.modelInfo form div {
+  padding-left: 5px;
+  width: 144px;
+  height: 35px;
+  border: 1px solid #eaeaea;
+  margin-right: 53px;
+}
+
 .shoppingCarts .carts {
   display: flex;
   flex-direction: column;
@@ -806,7 +937,7 @@ body {
 .cartInfo {
   display: flex;
   align-items: center;
-  flex: 1;
+  flex: 1.3;
 }
 
 .cartInfo img {
@@ -832,7 +963,7 @@ body {
 }
 
 .cartsLinks h3 {
-  flex: 1;
+  flex: 1.3;
 }
 
 .cartsLinks_h {
@@ -846,6 +977,9 @@ body {
   background: none;
   border: none;
   outline: none;
+}
+.cartPrice button i:hover {
+  color: #f16d7f;
 }
 
 .shopping {
@@ -953,7 +1087,7 @@ body {
 }
 .checkout div:nth-child(3) .check div:nth-child(2) {
   margin: 0 0 0 auto;
-  display: flex;
+  width: 165px;
   color: #222222;
   font-size: 16px;
   font-weight: 700;
@@ -983,6 +1117,14 @@ body {
 }
 .checkout div:nth-child(3) .check div:nth-child(4) button:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */

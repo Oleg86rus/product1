@@ -1,4 +1,4 @@
-
+$hovercolor: #f16d7f;
 .container {
   width: 1140px;
   margin: auto;
@@ -12,6 +12,7 @@
   justify-content: space-between;
   div{
     display: flex;
+    align-items: center;
   }
   a{
     outline: none;
