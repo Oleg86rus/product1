@@ -803,6 +803,9 @@ nav a:hover {
   margin-left: 13px;
   font-weight: 700;
 }
+.sliderModel .products_sp .product_sp .correctCSS {
+  margin-left: 26px;
+}
 .sliderModel .products_sp .product_sp .productText {
   margin-top: 143px;
   padding-left: 13px;
@@ -842,6 +845,10 @@ nav a:hover {
 }
 
 .modelInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 620px;
 }
 .modelInfo form {
