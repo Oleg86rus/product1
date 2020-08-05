@@ -842,26 +842,138 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 119px;
+  margin-top: -77px;
 }
 
-.modelInfo {
+.youMayLike {
+  /* Style for "you may li" */
+  width: 234px;
+  height: 18px;
+  color: #4d4d4d;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 72px;
+}
+
+.modelInfos {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   width: 620px;
 }
-.modelInfo form {
+.modelInfos form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
 }
-.modelInfo form div {
-  padding-left: 5px;
+.modelInfos form .formButton {
+  width: 620px;
+  display: flex;
+  justify-content: center;
+}
+.modelInfos form button {
+  /* Style for "Rectangle" */
+  width: 537px;
+  height: 55px;
+  border: 1px solid #ef5b70;
+  background-color: #ffffff;
+  margin-top: 28px;
+}
+.modelInfos form button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f16d7f;
+  outline: none;
+  text-decoration: none;
+}
+.modelInfos form button a img {
+  margin-right: 15px;
+}
+.modelInfos form input {
+  /* Style for "Rectangle" */
   width: 144px;
   height: 35px;
   border: 1px solid #eaeaea;
-  margin-right: 53px;
+  background-color: #ffffff;
+  outline: none;
+  padding-left: 5px;
+}
+
+.modelInfo:nth-child(1) {
+  /* Style for "WOMEN COLL" */
+  width: 148px;
+  height: 10px;
+  color: #f16d7f;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.modelInfo:nth-child(2) {
+  width: 147px;
+  height: 1px;
+  background-color: #eaeaea;
+}
+.modelInfo:nth-child(3) {
+  /* Style for "Rectangle" */
+  width: 63px;
+  height: 3px;
+  background-color: #ef5b70;
+  margin-top: -1px;
+  margin-bottom: 17px;
+}
+.modelInfo:nth-child(4) {
+  /* Style for "Moschino C" */
+  width: 254px;
+  height: 14px;
+  color: #4d4d4d;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 67px;
+}
+.modelInfo:nth-child(5) {
+  /* Style for "Compelling" */
+  width: 618px;
+  height: 60px;
+  color: #5e5e5e;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.modelInfo:nth-child(6) {
+  display: flex;
+  justify-content: space-between;
+  width: 335px;
+  height: 10px;
+  color: #b9b9b9;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+  margin-left: 30px;
+}
+.modelInfo:nth-child(6) p {
+  display: flex;
+}
+.modelInfo:nth-child(6) span {
+  color: #2f2f2f;
+}
+.modelInfo:nth-child(7) {
+  /* Style for "$561" */
+  width: 54px;
+  height: 24px;
+  color: #f16d7f;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 43px;
 }
 
 .shoppingCarts .carts {
@@ -891,10 +1003,6 @@ nav a:hover {
   justify-content: space-between;
 }
 
-.cartHeader a:last-child {
-  color: #f16d7f;
-}
-
 .cartLink {
   display: flex;
   justify-content: space-between;
@@ -906,7 +1014,7 @@ nav a:hover {
 }
 
 .cartLink a:hover {
-  border-bottom: 1px solid #050608;
+  color: #f16d7f;
 }
 
 .shoppingCarts {
@@ -1072,6 +1180,8 @@ nav a:hover {
   background-color: #f5f3f3;
 }
 .checkout div:nth-child(3) .check {
+  display: flex;
+  flex-direction: column;
   width: 275px;
   height: 135px;
 }
@@ -1082,7 +1192,7 @@ nav a:hover {
 }
 .checkout div:nth-child(3) .check div:nth-child(1) {
   margin: 0 0 0 auto;
-  width: 101px;
+  width: 108px;
   height: 12px;
 }
 .checkout div:nth-child(3) .check div:nth-child(1) p {
