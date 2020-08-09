@@ -1,6 +1,4 @@
 
-$hovercolor: #f16d7f;
-
 .shoppingCarts .carts{
   display: flex;
   flex-direction: column;
@@ -124,7 +122,7 @@ $hovercolor: #f16d7f;
     color: $hovercolor;
   }
 }
-.checkout {
+.shoppingInfo {
   button:hover{
     color: $hovercolor;
   }

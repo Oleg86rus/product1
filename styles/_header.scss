@@ -1,4 +1,8 @@
-$hovercolor: #f16d7f;
+
+button:hover{
+  cursor: pointer;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
 .container {
   width: 1140px;
   margin: auto;
