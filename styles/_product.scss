@@ -1,0 +1,51 @@
+.category{
+  width: 243px;
+  height: 600px;
+}
+.allProducts{
+  display: flex;
+  justify-content: space-between;
+  .navCategory{
+    display: flex;
+    flex-direction: column;
+    a{
+      text-decoration: none;
+      /* Style for "Accessorie" */
+      width: 138px;
+      color: #6f6e6e;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 33px;
+      padding-left: 22px;
+    }
+  }
+  label{
+    /* Style for "Category" */
+    width: 75px;
+    height: 37px;
+    color: $hovercolor;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-left: 5px solid #ef5b70;
+    padding-left: 11px;
+    padding-top: 12px;
+    display: block;
+    text-align: center;
+  }
+  .categoryLine{
+    width: 243px;
+    height: 1px;
+    background-color: #ebebeb;
+    margin: -3px 0 18px 6px;
+  }
+}
+.allProductsImage{
+  /* Style for "Product" */
+  width: 848px;
+  height: 1164px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
