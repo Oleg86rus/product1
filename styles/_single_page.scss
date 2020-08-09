@@ -139,24 +139,136 @@ $hovercolor: #f16d7f;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 119px;
+  margin-top: -77px;
 }
-.modelInfo{
+.youMayLike{
+  /* Style for "you may li" */
+  width: 234px;
+  height: 18px;
+  color: #4d4d4d;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 72px;
+}
+.modelInfos{
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   width: 620px;
     form{
+      .formButton{
+        width: 620px;
+        display: flex;
+        justify-content: center;
+      }
+      button{
+        /* Style for "Rectangle" */
+        width: 537px;
+        height: 55px;
+        border: 1px solid #ef5b70;
+        background-color: #ffffff;
+        margin-top: 28px;
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            margin-right: 15px;
+          }
+          color: $hovercolor;
+          outline: none;
+          text-decoration: none;
+        }
+      }
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      justify-content: space-between;
+     input{
+       /* Style for "Rectangle" */
+       width: 144px;
+       height: 35px;
+       border: 1px solid #eaeaea;
+       background-color: #ffffff;
+       outline: none;
+       padding-left: 5px;
+     }
 
-    div{
-      padding-left: 5px;
-      width: 144px;
-      height: 35px;
-      border: 1px solid #eaeaea;
-      margin-right: 53px;
     }
 }
+.modelInfo {
+  &:nth-child(1) {
+    /* Style for "WOMEN COLL" */
+    width: 148px;
+    height: 10px;
+    color: #f16d7f;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  &:nth-child(2){
+    width: 147px;
+    height: 1px;
+    background-color: #eaeaea;
+  }
+  &:nth-child(3){
+    /* Style for "Rectangle" */
+    width: 63px;
+    height: 3px;
+    background-color: #ef5b70;
+    margin-top: -1px;
+    margin-bottom: 17px;
+  }
+  &:nth-child(4){
+    /* Style for "Moschino C" */
+    width: 254px;
+    height: 14px;
+    color: #4d4d4d;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 67px;
+  }
+  &:nth-child(5){
+    /* Style for "Compelling" */
+    width: 618px;
+    height: 60px;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  &:nth-child(6){
+    display: flex;
+    justify-content: space-between;
+    width: 335px;
+    height: 10px;
+    color: #b9b9b9;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+    margin-left: 30px;
+    p{
+      display: flex;
+    }
+    span{
+      color: #2f2f2f;
+    }
+  }
+  &:nth-child(7){
+    /* Style for "$561" */
+    width: 54px;
+    height: 24px;
+    color: $hovercolor;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 43px;
+  }
 }

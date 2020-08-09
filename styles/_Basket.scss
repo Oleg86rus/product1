@@ -24,9 +24,6 @@ $hovercolor: #f16d7f;
   justify-content: space-between;
 }
 
-.cartHeader a:last-child{
-  color: #f16d7f;
-}
 .cartLink{
   display: flex;
   justify-content: space-between;
@@ -36,7 +33,7 @@ $hovercolor: #f16d7f;
   font-weight: 400;
 }
 .cartLink a:hover{
-  border-bottom: 1px solid #050608;
+  color: $hovercolor;
 }
 .shoppingCarts{
   height: 1123px;
@@ -188,6 +185,8 @@ $hovercolor: #f16d7f;
     height: 214px;
     background-color: #f5f3f3;
     .check {
+      display: flex;
+      flex-direction: column;
       width: 275px;
       height: 135px;
       div {
@@ -197,7 +196,7 @@ $hovercolor: #f16d7f;
       }
       div:nth-child(1) {
         margin: 0 0 0 auto;
-        width: 101px;
+        width: 108px;
         height: 12px;
         p {
           color: #4a4a4a;
