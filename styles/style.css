@@ -1418,6 +1418,8 @@ nav a:hover {
 }
 
 .allProducts {
+  margin-top: 59px;
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -1437,7 +1439,8 @@ nav a:hover {
 }
 .allProducts label {
   /* Style for "Category" */
-  width: 75px;
+  width: 243px;
+  text-align: left;
   height: 37px;
   color: #f16d7f;
   font-size: 14px;
@@ -1448,15 +1451,30 @@ nav a:hover {
   padding-left: 11px;
   padding-top: 12px;
   display: block;
-  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 18px;
+}
+.allProducts label:nth-child(7) {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.allProducts label:nth-child(5) {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 .allProducts .categoryLine {
+  position: absolute;
   width: 243px;
   height: 1px;
   background-color: #ebebeb;
   margin: -3px 0 18px 6px;
 }
-
 .allProductsImage {
   /* Style for "Product" */
   width: 848px;
@@ -1464,6 +1482,155 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.productsInfos {
+  display: flex;
+}
+
+.productsInfo label {
+  border: none;
+}
+.productsInfo input {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+}
+.productsInfo h3 {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.productsInfo:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  margin-right: 114px;
+}
+.productsInfo:nth-child(1) div {
+  margin-left: -15px;
+}
+.productsInfo:nth-child(1) div a {
+  margin: 0 15px 0 15px;
+  text-decoration: none;
+  outline: none;
+  color: #222222;
+}
+.productsInfo:nth-child(1) div a:hover {
+  color: #f16d7f;
+}
+.productsInfo:nth-child(2) {
+  margin-right: 58px;
+}
+.productsInfo:nth-child(2) div {
+  display: flex;
+}
+.productsInfo:nth-child(3) input {
+  width: 60px;
+}
+
+.sort {
+  /* Style for "Rectangle" */
+  width: 851px;
+  height: 50px;
+  background-color: #f3f3f3;
+  margin-bottom: 48px;
+}
+.sort button {
+  color: #6f6e6e;
+  margin-top: 10px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  /* Style for "Rectangle" */
+  width: 67px;
+  height: 30px;
+}
+.sort button:nth-child(1) {
+  margin-left: 9px;
+}
+.sort button:nth-child(2) {
+  width: 86px;
+  margin-left: -4px;
+}
+.sort button:nth-child(3) {
+  width: 56px;
+  margin-left: 10px;
+}
+.sort button:nth-child(4) {
+  width: 63px;
+  margin-left: -4px;
+}
+.sort button:nth-child(4) i {
+  margin-right: -11px;
+  margin-left: 15px;
+}
+
+.ViewAll {
+  width: 848px;
+  margin: 50px 0 110px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.ViewAll button {
+  /* Style for "Rounded Re" */
+  width: 150px;
+  height: 44px;
+  border-radius: 3px;
+  border: 1px solid #f16d7f;
+  background-color: #ffffff;
+  color: #f16d7f;
+}
+
+.blackInfos {
+  background-color: #222224;
+  height: 251px;
+  padding-top: 90px;
+}
+.blackInfos .blackInfoss {
+  display: flex;
+  justify-content: space-between;
+}
+.blackInfos .blackInfoss div {
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 309px;
+  height: 138px;
+}
+.blackInfos .blackInfoss div p:nth-child(1) {
+  margin-top: 80px;
+  color: #fbfbfb;
+  font-size: 20px;
+  font-weight: 700;
+  /* Text style for "Free Deliv" */
+  letter-spacing: 0.5px;
+}
+.blackInfos .blackInfoss div p:nth-child(2) {
+  /* Style for "Worldwide" */
+  width: 310px;
+  height: 37px;
+  color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23.95px;
+  /* Text style for "W, orldwid" */
+  letter-spacing: 0.35px;
+  text-align: center;
+}
+.blackInfos .blackInfoss .blackInfo_car {
+  background-image: url("../img/car.png");
+  background-repeat: no-repeat;
+}
+.blackInfos .blackInfoss .blackInfo_percent {
+  background-image: url("../img/percent.png");
+  background-repeat: no-repeat;
+}
+.blackInfos .blackInfoss .blackInfo_crown {
+  background-image: url("../img/crown.png");
+  background-repeat: no-repeat;
 }
 
 body {
