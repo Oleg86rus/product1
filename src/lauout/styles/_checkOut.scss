@@ -1,0 +1,234 @@
+
+.collapse_box {
+  padding: 0;
+  display: flex;
+  max-height: 0;
+  box-sizing: border-box;
+  transition: all 1s cubic-bezier(0, 1, 0, 1);
+  overflow: hidden;
+}
+
+.collapse:checked + label + .collapse_box {
+  transition: all 1s ease-in-out;
+  max-height: 2000px;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 89px;
+
+  .line {
+    margin-top: -20px;
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 93px;
+    }
+  }
+
+  label {
+    width: 211px;
+    height: 23px;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .checkoutAdress {
+    display: flex;
+    margin-top: 39px;
+    margin-left: 35px;
+    height: 539px;
+
+    button {
+      /* Style for "Rectangle" */
+      width: 180px;
+      height: 50px;
+      border: 1px solid #eaeaea;
+      background-color: #ffffff;
+      color: #4a4a4a;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 32px 32px 0 0;
+
+      &:hover {
+        color: $hovercolor;
+        cursor: pointer;
+      }
+    }
+
+    .checkoutAdressRegister {
+      display: flex;
+      flex-direction: column;
+      width: 583px;
+
+      .checkoutText {
+        &:nth-child(1) {
+          /* Style for "Check as a" */
+          width: 202px;
+          height: 11px;
+          color: #222222;
+          font-size: 13px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+        }
+
+        &:nth-child(2) {
+          /* Style for "Register w" */
+          width: 223px;
+          height: 12px;
+          color: #b3b2b2;
+          font-size: 13px;
+          font-weight: 400;
+          margin-bottom: 31px;
+        }
+
+        &:nth-child(5) {
+          width: 163px;
+          height: 10px;
+          color: #222222;
+          font-size: 13px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        &:nth-child(6) {
+          width: 223px;
+          height: 12px;
+          color: #b3b2b2;
+          font-size: 13px;
+          font-weight: 400;
+          margin-bottom: 33px;
+        }
+      }
+
+      .checkoutTextI {
+        width: 261px;
+        height: 12px;
+        color: #b3b2b2;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      .guest {
+        margin-bottom: 16px;
+
+        input {
+          margin-right: 14px;
+        }
+      }
+
+      .register {
+        margin-bottom: 36px;
+
+        input {
+          margin-right: 14px;
+        }
+
+      }
+    }
+
+    .checkoutAdressLogin {
+      form {
+        margin-top: 27px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+          /* Style for "EMAIL ADDR" */
+          width: 400px;
+          height: 101px;
+          color: #222222;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+
+          span {
+            color: #ff0d0d;
+          }
+
+          input {
+            margin-top: 16px;
+            /* Style for "Rectangle" */
+            width: 390px;
+            height: 45px;
+            border: 1px solid #eaeaea;
+            background-color: #ffffff;
+          }
+        }
+
+      }
+
+      .RequiredFileds {
+        /* Style for "* Required" */
+        width: 97px;
+        height: 12px;
+        color: #ff0d0d;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      .checkoutText {
+        &:nth-child(1) {
+          /* Style for "Already re" */
+          width: 128px;
+          height: 11px;
+          color: #222222;
+          font-size: 13px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        &:nth-child(2) {
+          /* Style for "Please log" */
+          width: 107px;
+          height: 12px;
+          color: #b3b2b2;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 20px;
+          margin-top: 15px;
+        }
+      }
+
+      .log_or_forgot {
+        a {
+          /* Style for "Forgot Pas" */
+          width: 111px;
+          height: 12px;
+          color: #222222;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-decoration: none;
+        }
+
+
+      }
+
+    }
+  }
+
+
+}
+
+.collapse {
+  display: none;
+
+  + label {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.line {
+  /* Style for "Shape 7" */
+  width: 1140px;
+  height: 1px;
+  background-color: #e8e8e8;
+}

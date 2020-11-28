@@ -1,9 +1,10 @@
 $hovercolor: #f16d7f;
 .subscribes {
-  background: url(../img/subscribe.jpg) no-repeat center bottom, #ccc;
+  background: url(../../assets/images/subscribe.jpg) no-repeat center bottom, #ccc;
   background-size: cover;
   height: 438px;
   width: 100%;
+  margin: 0 -20px;
 
   .subscribes_countainer {
     display: flex;
@@ -18,7 +19,7 @@ $hovercolor: #f16d7f;
 
   .subscribeTexts:nth-child(1) {
     margin-top: 111px;
-    background-image: url("../img/subscribe.png");
+    background-image: url("../../assets/images/subscribe.png");
     border-radius: 50px;
     background-repeat: no-repeat;
     width: 83px;
@@ -233,23 +234,3 @@ nav a:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
   background-color: #f16d7f;
 }
-
-.Icon:nth-child(1) {
-  color: #b2b2b2;
-}/*
-
-.Icon:nth-child(2) {
-  background-color: #f16d7f;
-  color: #f7f7f8;
-}
-
-.Icon:nth-child(3) {
-  background-color: #ededed;
-  color: #b2b2b2;
-}
-
-.Icon:nth-child(4),
-.Icon:nth-child(5) {
-  background-color: #ffffff;
-  color: #b2b2b2;
-}*/

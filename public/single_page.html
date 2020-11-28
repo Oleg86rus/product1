@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../src/lauout/styles/style.css">
     <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="header container">
-    <div> <div class="logo"><a href="index.html">Bran<span>d</span></a></div>
+    <div>
+        <div class="logo"><a href="index.html">Bran<span>d</span></a></div>
         <form method="get" class="search">
-            <button class="search__browse" name="Browse" id="">Browse <i class="fas fa-caret-down"></i></button>
+            <button class="search__browse" name="Browse">Browse <i class="fas fa-caret-down"></i></button>
             <label>
                 <input type="text" name="search" placeholder="Search for Item...">
             </label>
             <button><i class="fas fa-search"></i></button>
         </form>
     </div>
-    <div><a href="../pages/Basket.html"><img src="../img/cart.png" alt="cart" class="header__cart"></a>
-        <button name="accountBar" class="header__account-bar">My Account <i class="fas fa-caret-down"></i></button></div>
+    <div><a href="../pages/Basket.html"><img src="../src/assets/images/cart.png" alt="cart" class="header__cart"></a>
+        <button name="accountBar" class="header__account-bar">My Account <i class="fas fa-caret-down"></i></button>
+    </div>
 </div>
 
 <div class="headerLine"></div>
@@ -44,94 +46,116 @@
 </div>
 <div class="sliderModel">
     <div class="sliderGirl">
-        <div class="sliderGirl_c container"><img src="../img/sliderGirl.jpg" alt="model">
-            </div>
-        <div><i class="fas fa-angle-left"></i></div>
-        <div> <i class="fas fa-angle-right"></i></div>
-    </div>
-    <div class="modelInfoWrap container"><div class="modelInfos">
-        <div class="modelInfo">Women collection</div>
-        <div class="modelInfo"></div>
-        <div class="modelInfo"></div>
-        <div class="modelInfo">Moschino Cheap And Chic</div>
-        <div class="modelInfo">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
-            collaborative architectures before cutting-edge services. Completely visualize parallel core competencies
-            rather than exceptional portals.</div>
-        <div class="modelInfo">
-            <p>MATERIAL: <span>COTTON</span></p>
-            <p>DESIGNER: <span>BINBURHAN</span></p>
+        <div class="sliderGirl_c container"><img src="../assets/images/sliderGirl.jpg" alt="model">
         </div>
-        <div class="modelInfo">$561</div>
-        <form action="">
-            <div>
-                <p>CHOOSE COLORE</p>
-                           <label>
-                                <input placeholder="Color" list="Colors">
-                            </label>
-                <datalist id="Colors">
-                    <option label="Красный" value="Red">
-                    <option label="Зеленый" value="Green">
-                    <option label="Голубой" value="Blue">
-                    <option label="Черный" value="Black">
-                </datalist>
+        <div><i class="fas fa-angle-left"></i></div>
+        <div><i class="fas fa-angle-right"></i></div>
+    </div>
+    <div class="modelInfoWrap container">
+        <div class="modelInfos">
+            <div class="modelInfo">Women collection</div>
+            <div class="modelInfo"></div>
+            <div class="modelInfo"></div>
+            <div class="modelInfo">Moschino Cheap And Chic</div>
+            <div class="modelInfo">Compellingly actualize fully researched processes before proactive outsourcing.
+                Progressively syndicate
+                collaborative architectures before cutting-edge services. Completely visualize parallel core
+                competencies
+                rather than exceptional portals.
             </div>
-            <div>
-                <p>CHOOSE SIZE</p>
-                           <label>
-                                <input placeholder="Size" list="Size">
-                            </label>
-                <datalist id="Size">
-                    <option label="46" value="S">
-                    <option label="48" value="M">
-                    <option label="50" value="L">
-                    <option label="52" value="XL">
-                </datalist>
+            <div class="modelInfo">
+                <p>MATERIAL: <span>COTTON</span></p>
+                <p>DESIGNER: <span>BINBURHAN</span></p>
             </div>
-            <div>
-                <p>QUANTITY</p>
-                <label>
-                    <input placeholder="Size" list="QUANTITY">
-                </label>
-                <datalist id="QUANTITY">
-                    <option value="1">
-                    <option value="2">
-                    <option value="3">
-                    <option value="4">
-                </datalist>
-            </div>
-            <div class="formButton"><button><a href="../pages/Basket.html">
-                <img src="../img/redCart.png" alt="cart">
-                <p>Add to Cart</p></a>
-            </button></div>
-        </form>
-    </div></div>
+            <div class="modelInfo">$561</div>
+            <form>
+                <div>
+                    <p>CHOOSE COLORE</p>
+                    <label>
+                        <input placeholder="Color" list="Colors">
+                    </label>
+                    <datalist id="Colors">
+                        <option label="Красный" value="Red">
+                        <option label="Зеленый" value="Green">
+                        <option label="Голубой" value="Blue">
+                        <option label="Черный" value="Black">
+                    </datalist>
+                </div>
+                <div>
+                    <p>CHOOSE SIZE</p>
+                    <label>
+                        <input placeholder="Size" list="Size">
+                    </label>
+                    <datalist id="Size">
+                        <option label="46" value="S">
+                        <option label="48" value="M">
+                        <option label="50" value="L">
+                        <option label="52" value="XL">
+                    </datalist>
+                </div>
+                <div>
+                    <p>QUANTITY</p>
+                    <label>
+                        <input placeholder="Size" list="QUANTITY">
+                    </label>
+                    <datalist id="QUANTITY">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                    </datalist>
+                </div>
+                <div class="formButton">
+                    <button><a>
+                        <img src="../assets/images/redCart.png" alt="cart">
+                        Add to Cart</a>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
     <div>
         <div class="youMayLike">you may like also</div>
         <div class="products_sp container clearfix">
             <div class="product_sp">
-                <img class="productImg" src="../img/spproduct1.png" alt="product1"><div class="productImgText">BLAZE LEGGINGS<br><span>$52.00</span></div>
+                <img class="productImg" src="../assets/images/spproduct1.png" alt="product1">
+                <div class="productImgText">BLAZE LEGGINGS<br><span>$52.00</span></div>
                 <div class="product-hover">
-                    <div><button class="productButton"><img src="../img/basket.png" alt="basket">Add to Cart</button></div>
+                    <div>
+                        <button class="productButton"><img src="../assets/images/basket.png" alt="basket">Add to Cart</button>
+                    </div>
                     <div class="productText">BLAZE LEGGINGS<br><span>$52.00</span></div>
                 </div>
             </div>
             <div class="product_sp">
-                <img class="productImg" src="../img/spproduct2.png" alt="product2"><div class="productImgText">ALEXA SWEATER<br><span>$52.00</span></div>
+                <img class="productImg" src="../assets/images/spproduct2.png" alt="product2">
+                <div class="productImgText">ALEXA SWEATER<br><span>$52.00</span></div>
                 <div class="product-hover">
-                    <div><button class="productButton"><img src="../img/basket.png" alt="basket">Add to Cart</button></div>
-                    <div class="productText">ALEXA SWEATER<br><span>$52.00</span></div></div>
+                    <div>
+                        <button class="productButton"><img src="../assets/images/basket.png" alt="basket">Add to Cart</button>
+                    </div>
+                    <div class="productText">ALEXA SWEATER<br><span>$52.00</span></div>
+                </div>
             </div>
             <div class="product_sp">
-                <img class="productImg" src="../img/spproduct3.png" alt="product3"><div class="productImgText correctCSS">AGNES TOP<br><span>$52.00</span></div>
+                <img class="productImg" src="../assets/images/spproduct3.png" alt="product3">
+                <div class="productImgText correctCSS">AGNES TOP<br><span>$52.00</span></div>
                 <div class="product-hover">
-                    <div><button class="productButton"><img src="../img/basket.png" alt="basket">Add to Cart</button></div>
-                    <div class="productText">AGNES TOP<br><span>$52.00</span></div></div>
+                    <div>
+                        <button class="productButton"><img src="../assets/images/basket.png" alt="basket">Add to Cart</button>
+                    </div>
+                    <div class="productText">AGNES TOP<br><span>$52.00</span></div>
+                </div>
             </div>
             <div class="product_sp">
-                <img class="productImg" src="../img/spproduct4.png" alt="product4"><div class="productImgText">SYLVA SWEATER<br><span>$52.00</span></div>
+                <img class="productImg" src="../assets/images/spproduct4.png" alt="product4">
+                <div class="productImgText">SYLVA SWEATER<br><span>$52.00</span></div>
                 <div class="product-hover">
-                    <div><button class="productButton"><img src="../img/basket.png" alt="basket">Add to Cart</button></div>
-                    <div class="productText">SYLVA SWEATER<br><span>$52.00</span></div></div>
+                    <div>
+                        <button class="productButton"><img src="../assets/images/basket.png" alt="basket">Add to Cart</button>
+                    </div>
+                    <div class="productText">SYLVA SWEATER<br><span>$52.00</span></div>
+                </div>
             </div>
         </div>
     </div>
@@ -144,7 +168,8 @@
             <div class="subscribeTexts">
                 <div class="subscribe">
                     <div class="subscribeText">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                    </div>
                     <div class="subscribeText">Bin Burhan<br><span>Dhaka, Bd</span></div>
                 </div>
                 <div class="subscribeColors">
@@ -179,7 +204,7 @@
     </div>
     <div class="footerLink">
         <div class="company">
-            <H4>COMPANY</H4>
+            <h4>COMPANY</h4>
             <nav class="companyNav">
                 <a href="#">Home</a>
                 <a href="#">Shop</a>
@@ -189,7 +214,7 @@
             </nav>
         </div>
         <div class="information">
-            <H4>INFORMATION</H4>
+            <h4>INFORMATION</h4>
             <nav class="informationNav">
                 <a href="#">Tearms & Condition</a>
                 <a href="#">Privacy Policy</a>
@@ -199,7 +224,7 @@
             </nav>
         </div>
         <div class="shopCategory">
-            <H4>SHOP CATEGORY</H4>
+            <h4>SHOP CATEGORY</h4>
             <nav class="shopCategoryNav">
                 <a href="#">Men</a>
                 <a href="#"> Women</a>

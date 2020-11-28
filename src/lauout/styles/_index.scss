@@ -1,4 +1,3 @@
-
 $hovercolor: #f16d7f;
 
 .topBanner {
@@ -11,7 +10,7 @@ $hovercolor: #f16d7f;
   height: 613px;
   display: flex;
   align-items: center;
-  background-image: url("../img/topHeaderBack.png");
+  background-image: url("../../assets/images/topHeaderBack.png");
   background-repeat: no-repeat;
   background-size: 48.5%;
   background-position: right top;
@@ -49,7 +48,7 @@ $hovercolor: #f16d7f;
 .hotDeal:nth-child(1) {
   width: 560px;
   height: 542px;
-  background-image: url("../img/hotDeal1.jpg");
+  background-image: url("../../assets/images/hotDeal1.jpg");
 }
 
 .hotDealMan {
@@ -84,7 +83,7 @@ $hovercolor: #f16d7f;
 .hotDeal:nth-child(2) {
   width: 560px;
   height: 261px;
-  background-image: url("../img/hotDeal2.jpg");
+  background-image: url("../../assets/images/hotDeal2.jpg");
 }
 
 .hotDealAccesories {
@@ -104,7 +103,7 @@ $hovercolor: #f16d7f;
 .hotDeal:nth-child(3) {
   width: 560px;
   height: 261px;
-  background-image: url("../img/hotDeal3.jpg");
+  background-image: url("../../assets/images/hotDeal3.jpg");
 }
 
 .hotDealWoman {
@@ -121,16 +120,13 @@ $hovercolor: #f16d7f;
 }
 
 .hotDealWoman {
-}
-
-.hotDealWoman {
   letter-spacing: 0;
 }
 
 .hotDeal:nth-child(4) {
   width: 560px;
   height: 542px;
-  background-image: url("../img/hotDeal4.jpg");
+  background-image: url("../../assets/images/hotDeal4.jpg");
 }
 
 .hotDealKids {
@@ -185,10 +181,12 @@ $hovercolor: #f16d7f;
   height: 364px;
   line-height: 37px;
   position: relative;
+
   span {
     font-size: 16px;
     color: #f16d7f;
   }
+
   .productImg {
     height: 280px;
     display: block;
@@ -253,6 +251,7 @@ $hovercolor: #f16d7f;
     background-color: transparent;
   }
 }
+
 .browseAll {
   border: none;
   outline: none;
@@ -285,7 +284,7 @@ $hovercolor: #f16d7f;
   height: 529px;
   font-weight: 400;
   color: #ffffff;
-  background-image: url("../img/sales.jpg");
+  background-image: url("../../assets/images/sales.jpg");
 }
 
 .salesOfferForWomen:nth-child(1) {
@@ -319,17 +318,17 @@ $hovercolor: #f16d7f;
 }
 
 .sale:nth-child(1) {
-  background-image: url("../img/car.png");
+  background-image: url("../../assets/images/car.png");
   background-repeat: no-repeat;
 }
 
 .sale:nth-child(2) {
-  background-image: url("../img/percent.png");
+  background-image: url("../../assets/images/percent.png");
   background-repeat: no-repeat;
 }
 
 .sale:nth-child(3) {
-  background-image: url("../img/crown.png");
+  background-image: url("../../assets/images/crown.png");
   background-repeat: no-repeat;
 }
 

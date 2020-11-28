@@ -1,4 +1,9 @@
-$hovercolor: #f16d7f;
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+
 .container {
   width: 1140px;
   margin: auto;
@@ -10,13 +15,16 @@ $hovercolor: #f16d7f;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  div{
+
+  div {
     display: flex;
     align-items: center;
   }
-  a{
+
+  a {
     outline: none;
   }
+
   .search {
     input {
       height: inherit;
@@ -27,6 +35,7 @@ $hovercolor: #f16d7f;
       border-left: 1px solid #e6e6e6;
       border-right: 1px solid #e6e6e6;
     }
+
     button:last-child {
       border: none;
       outline: none;
@@ -42,7 +51,7 @@ $hovercolor: #f16d7f;
   width: 165px;
   line-height: 51px;
   text-transform: uppercase;
-  background: url("../img/logo.png") no-repeat;
+  background: url("../../assets/images/logo.png") no-repeat;
   background-blend-mode: overlay;
   font-size: 27px;
   margin-right: 46px;
@@ -51,7 +60,8 @@ $hovercolor: #f16d7f;
     color: #f16d7f;
     font-weight: 700;
   }
-  a{
+
+  a {
     display: block;
     height: 100%;
     text-decoration: none;
@@ -59,6 +69,7 @@ $hovercolor: #f16d7f;
     outline: none;
   }
 }
+
 .search {
   height: 38px;
   display: flex;
@@ -76,7 +87,8 @@ $hovercolor: #f16d7f;
   border: none;
   color: #7c7c7c;
   outline: none;
-  i{
+
+  i {
     color: #838383;
   }
 }
@@ -110,7 +122,8 @@ $hovercolor: #f16d7f;
   display: flex;
   justify-content: center;
   align-items: center;
-  a{
+
+  a {
     outline: none;
     text-transform: uppercase;
     text-decoration: none;
@@ -120,11 +133,13 @@ $hovercolor: #f16d7f;
     background-repeat: no-repeat;
     background-size: 0 2px;
   }
-  a:hover{
+
+  a:hover {
     background-size: 100% 2px;
     padding-bottom: 18px;
     margin-bottom: -17px;
   }
+
   a:not(:last-child) {
     margin-right: 46px;
   }
