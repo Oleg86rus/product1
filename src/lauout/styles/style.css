@@ -45,7 +45,7 @@ button:hover {
   width: 165px;
   line-height: 51px;
   text-transform: uppercase;
-  background: url("../img/logo.png") no-repeat;
+  background: url("../../assets/images/logo.png") no-repeat;
   background-blend-mode: overlay;
   font-size: 27px;
   margin-right: 46px;
@@ -134,10 +134,11 @@ button:hover {
 }
 
 .subscribes {
-  background: url(../img/subscribe.jpg) no-repeat center bottom, #ccc;
+  background: url(../../assets/images/subscribe.jpg) no-repeat center bottom, #ccc;
   background-size: cover;
   height: 438px;
   width: 100%;
+  margin: 0 -20px;
 }
 .subscribes .subscribes_countainer {
   display: flex;
@@ -150,7 +151,7 @@ button:hover {
 }
 .subscribes .subscribeTexts:nth-child(1) {
   margin-top: 111px;
-  background-image: url("../img/subscribe.png");
+  background-image: url("../../assets/images/subscribe.png");
   border-radius: 50px;
   background-repeat: no-repeat;
   width: 83px;
@@ -361,7 +362,7 @@ nav a:hover {
   height: 613px;
   display: flex;
   align-items: center;
-  background-image: url("../img/topHeaderBack.png");
+  background-image: url("../../assets/images/topHeaderBack.png");
   background-repeat: no-repeat;
   background-size: 48.5%;
   background-position: right top;
@@ -399,7 +400,7 @@ nav a:hover {
 .hotDeal:nth-child(1) {
   width: 560px;
   height: 542px;
-  background-image: url("../img/hotDeal1.jpg");
+  background-image: url("../../assets/images/hotDeal1.jpg");
 }
 
 .hotDealMan {
@@ -434,7 +435,7 @@ nav a:hover {
 .hotDeal:nth-child(2) {
   width: 560px;
   height: 261px;
-  background-image: url("../img/hotDeal2.jpg");
+  background-image: url("../../assets/images/hotDeal2.jpg");
 }
 
 .hotDealAccesories {
@@ -454,7 +455,7 @@ nav a:hover {
 .hotDeal:nth-child(3) {
   width: 560px;
   height: 261px;
-  background-image: url("../img/hotDeal3.jpg");
+  background-image: url("../../assets/images/hotDeal3.jpg");
 }
 
 .hotDealWoman {
@@ -477,7 +478,7 @@ nav a:hover {
 .hotDeal:nth-child(4) {
   width: 560px;
   height: 542px;
-  background-image: url("../img/hotDeal4.jpg");
+  background-image: url("../../assets/images/hotDeal4.jpg");
 }
 
 .hotDealKids {
@@ -626,7 +627,7 @@ nav a:hover {
   height: 529px;
   font-weight: 400;
   color: #ffffff;
-  background-image: url("../img/sales.jpg");
+  background-image: url("../../assets/images/sales.jpg");
 }
 
 .salesOfferForWomen:nth-child(1) {
@@ -660,17 +661,17 @@ nav a:hover {
 }
 
 .sale:nth-child(1) {
-  background-image: url("../img/car.png");
+  background-image: url("../../assets/images/car.png");
   background-repeat: no-repeat;
 }
 
 .sale:nth-child(2) {
-  background-image: url("../img/percent.png");
+  background-image: url("../../assets/images/percent.png");
   background-repeat: no-repeat;
 }
 
 .sale:nth-child(3) {
-  background-image: url("../img/crown.png");
+  background-image: url("../../assets/images/crown.png");
   background-repeat: no-repeat;
 }
 
@@ -1621,15 +1622,15 @@ nav a:hover {
   text-align: center;
 }
 .blackInfos .blackInfoss .blackInfo_car {
-  background-image: url("../img/car.png");
+  background-image: url("../../assets/images/car.png");
   background-repeat: no-repeat;
 }
 .blackInfos .blackInfoss .blackInfo_percent {
-  background-image: url("../img/percent.png");
+  background-image: url("../../assets/images/percent.png");
   background-repeat: no-repeat;
 }
 .blackInfos .blackInfoss .blackInfo_crown {
-  background-image: url("../img/crown.png");
+  background-image: url("../../assets/images/crown.png");
   background-repeat: no-repeat;
 }
 
